@@ -8,6 +8,7 @@ Created on Tue Aug 15 17:17:40 2023
 
 import streamlit as st
 import pandas as pd
+import plotly
 import plotly.express as px
 import os
 
