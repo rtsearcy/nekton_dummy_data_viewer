@@ -95,7 +95,7 @@ with tab1: # Tide
         fig.update_layout(margin=dict(l=10, t=10, b=5))
         st.plotly_chart(fig, use_container_width=True)
 
-    st.write('Source: NOAA CO-OPS')
+    st.write('Source: [NOAA CO-OPS](https://tidesandcurrents.noaa.gov/)')
     st.table(tide[sd:ed][site].to_frame().head(10))
 
 
@@ -110,7 +110,7 @@ with tab2: # waves
                       notched=False, labels={'year':''})
     wave_fig.update_layout(margin=dict(l=10, t=10, b=5))
     st.plotly_chart(wave_fig, use_container_width=True)
-    st.write('Source: CDIP')
+    st.write('Source: [CDIP](https://cdip.ucsd.edu)')
 
 with tab3:  # Water quality
     params = ['Chlorophyll', 'Salinity', 'Temperature']
@@ -145,8 +145,6 @@ with tab3:  # Water quality
                        )
         #wq_fig.update_layout(margin=dict(l=10, t=10, b=10))
         st.plotly_chart(wq_fig, use_container_width=True)
-        
-    
-    st.write('Source: NOAA CO-OPS')
-    
-
+         
+    st.write('Source: [NOAA CO-OPS](https://tidesandcurrents.noaa.gov/)')
+ 
