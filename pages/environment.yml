@@ -1,4 +1,4 @@
-name: main
+name: base
 channels:
   - conda-forge
   - defaults
